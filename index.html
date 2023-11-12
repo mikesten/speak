@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak - GPTs to help you function in foreign languages</title>
+    <style>
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        html {
+            color: #fff;
+            background: #006064;
+        }
+        body {
+            font-size: 16px;
+            line-height: 24px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+        .page {
+            width: 60%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin: 96px 0 64px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 48px 0;
+            font-size: 64px;
+            font-weight: 900;
+        }
+        header p {
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.language {
+  background-color: #00838F;
+  border-radius: 32px;
+  color: white;
+  padding: 16px;
+  margin: 0 0 32px 0;
+  width: 216px;
+  height: 216px;
+  text-align: center;
+}
+
+.language a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.language h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.language p {
+  font-size: 16px;
+}
+
+.language .icon {
+    width: 112px;
+    height: 112px;
+    margin: 0 auto;
+    background: #00BCD4;
+    border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .languages {
+    flex-direction: column;
+    align-items: stretch; /* Stretch items to full width */
+  }
+
+  .language {
+    width: auto; /* Full width on small screens */
+    margin: 10px 0; /* Adjust margin for vertical layout */
+  }
+}
+
+aside strong {
+    font-weight: bold;
+}
+aside p {
+    margin: 0 0 16px 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        
+        <header>
+            <h1>Speak</h1>
+            <p>GPTs to help you function in foreign languages</p>
+        </header>
+        <main>
+            <ul class="languages">
+                <li class="language">
+                    <a href="https://chat.openai.com/g/g-qtZ4Gj0z3-falo-european-portuguese-language-buddy">
+                        <h2>Falo</h2>
+                        <div class="icon icon--falo"></div>
+                        <p>European Portuguese</p>
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="https://chat.openai.com/g/g-B2M336Jcf-hablo-spanish-language-buddy">
+                        <h2>Hablo</h2>
+                        <div class="icon icon--falo"></div>
+                        <p>Spanish</p>
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="https://chat.openai.com/g/g-RdlkTILlN-spreche-german-language-buddy">
+                        <h2>Spreche</h2>
+                        <div class="icon icon--falo"></div>
+                        <p>German</p>
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="https://chat.openai.com/g/g-rUMkuS0k0-papo-brazilian-portuguese-buddy">
+                        <h2>Papo</h2>
+                        <div class="icon icon--falo"></div>
+                        <p>Brazilian Portuguese</p>
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <aside>
+            <p><strong>What are these?</strong> GPTs are custom made ChatGPT bots that are designed for a specific task. These GPTs are made to help you get along in a foreign language. They’re primarily translators but they will also correct your grammar, explain the translations, suggest more appropriate idioms. They show their workings so you can check that what’s come out is really what you mean.</p>
+            <p><strong>How do I use them?</strong> Click to add them to your ChatGPT then just... chat to them. Anything you include in “quotes” will be translated directly - you can use this instead of Google Translate or DeepL. You can also just chat with them for more general language help.</p>
+        </aside>
+        <footer>
+            <p>Copyright &copy; 2023 Donotremove</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
