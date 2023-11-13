@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speaks - GPTs to help you function in foreign languages</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         html, body, div, span, applet, object, iframe,
         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
         a, abbr, acronym, address, big, cite, code,
@@ -105,11 +108,15 @@
             color: #fff;
             text-decoration: none;
             border-radius: 16px;
+            background-color: transparent;
+            outline: 4px solid transparent;
+            transition: background-color 0.3s ease, outline 0.3s ease;
         }
         .language a:hover,
         .language a:focus,
         .language a:active {
             background-color: #757575;
+            outline: 4px solid #fff;
         }
         .language h2 {
             font-size: 24px;
@@ -145,6 +152,27 @@
             background: url(simple/france.png) 0 0 no-repeat #616161;
             background-size: 112px;
         }
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto 32px auto;
+        }
+        .screenshot {
+            background-color: #616161;
+            border-radius: 16px;
+            color: white;
+            margin: 0 0 16px 0;
+            padding: 8px;
+            width: calc(33% - 16px);
+        }
+        .screenshot img {
+            display: block;
+            max-width: 100%;
+            border-radius: 8px;
+        }
 
         @media (max-width: 900px) {
             .page {
@@ -161,7 +189,10 @@
             }
             .language {
                 width: auto;
-                margin: 10px 0;
+                margin: 8px 0;
+            }
+            .screenshot {
+                width: calc(50% - 8px);
             }
         }
 
@@ -238,6 +269,17 @@
                         <h2>Parle</h2>
                         <p>French</p>
                     </a>
+                </li>
+            </ul>
+            <ul class="screenshots">
+                <li class="screenshot">
+                    <img src="screenshots/example-1.png" alt="Example of Falo directly translating a phrase passed in quotes into European Portuguese and then explaining the parts of the translation below." />
+                </li>
+                <li class="screenshot">
+                    <img src="screenshots/example-2.png" alt="Example of Hablo explaining different turns of phrase to express 'a little bit' in Spanish." />
+                </li>
+                <li class="screenshot">
+                    <img src="screenshots/example-3.png" alt="Example of Papo correcting a Brazilian Portuguese phrase, translating it and then explaining the grammar used." />
                 </li>
             </ul>
         </main>
