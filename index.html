@@ -157,16 +157,31 @@
             }
             .languages {
                 flex-direction: column;
-                align-items: stretch; /* Stretch items to full width */
+                align-items: stretch;
             }
             .language {
-                width: auto; /* Full width on small screens */
-                margin: 10px 0; /* Adjust margin for vertical layout */
+                width: auto;
+                margin: 10px 0;
             }
         }
 
         aside strong {
             font-weight: bold;
+        }
+        aside em {
+            font-style: italic;
+        }
+        aside a,
+        aside a:link,
+        aside a:visited {
+            color: #fff;
+            text-decoration: underline;
+        }
+        aside a:hover,
+        aside a:active,
+        aside a:focus {
+            color: #fff;
+            text-decoration: none;
         }
         aside p {
             margin: 0 0 16px 0;
@@ -227,8 +242,9 @@
             </ul>
         </main>
         <aside>
-            <p><strong>What are these?</strong> GPTs are custom made ChatGPT bots that are designed for a specific task. These GPTs are made to help you get along in a foreign language. They’re primarily translators but they will also correct your grammar, explain the translations, suggest more appropriate idioms. They show their workings so you can check that what’s come out is really what you mean.</p>
-            <p><strong>How do I use them?</strong> Click to add them to your ChatGPT then just... chat to them. Anything you include in “quotes” will be translated directly - you can use this instead of Google Translate or DeepL. You can also just chat with them for more general language help.</p>
+            <p><strong>How do I use them?</strong> Click to add them to your <a href="https://chatgpt.com/">ChatGPT</a> then just... chat to them. Anything you include in “quotes” will be translated directly. You can also just chat with them for more general language help.</p>
+            <p><strong>What are these?</strong> GPTs are custom made <a href="https://chatgpt.com/">ChatGPT</a> bots that are designed for a specific task. These GPTs are made to help you get along in a foreign language. They’re primarily translators but they will also correct your grammar, explain the translations and suggest more appropriate idioms. They show their workings so you can check that what comes out is really what you mean.</p>
+            <p><strong>Why not use a translation app?</strong> <a href="https:translate.google.com">Google Translate</a> and <a href="https://deepl.com">DeepL</a> are <em>amazing</em>! If you need fast translation and you're not interested in learning the language then they might be a better choice. The Speaks GPTs are for people who want to go deeper. Translation apps don't show their working - so they can give you literal translations that are not what you actually mean - and they're not very useful for learning.</p>
         </aside>
         <footer>
             <p>Copyright &copy; 2023 Donotremove</p>
